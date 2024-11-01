@@ -13,10 +13,9 @@ import A4Page from '@/components/A4Page.vue';
 <style scoped>
 
 .container {
-  background-color: red;
   display: flex;
-  align-items: center; /**vertical alignment**/
-  justify-content: center; /**horizontal alignment**/
+  align-items: center; /**vertical alignment of child in container**/
+  justify-content: center; /**horizontal alignment of child in container**/
 }
 
 </style>

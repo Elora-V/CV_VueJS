@@ -8,5 +8,8 @@ import CV from "@/views/CV.vue"
 
 
 <style>
+body {
+  background-color: rgb(226, 226, 226);
+}
 </style>
 
