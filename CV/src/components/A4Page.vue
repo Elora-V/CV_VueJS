@@ -6,6 +6,7 @@
 
 <script setup lang="ts">
 
+/** Open print page */
 function printPage():void {
   window.print()
 }
