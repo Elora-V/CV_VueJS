@@ -1,8 +1,16 @@
 <template>
-    <div class="A4">
+    <div class="A4" @dblclick="printPage">
         <slot></slot>
     </div>
 </template>
+
+<script setup lang="ts">
+
+function printPage():void {
+  window.print()
+}
+
+</script>
 
 <style scoped>
 .A4 {
