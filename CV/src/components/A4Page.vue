@@ -17,7 +17,7 @@ function printPage():void {
 .A4 {
   width: 215mm;
   height: 307mm;
-  background-color: white;
+  background-color: var(--background-page);
 }
 .A4:hover{
   box-shadow: 0px 0px 20px 5px rgba(0, 0, 127, 0.5);

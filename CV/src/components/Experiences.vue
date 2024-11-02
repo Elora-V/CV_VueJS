@@ -1,0 +1,7 @@
+<template>
+    formation :
+    ....
+
+    experiences :
+    ....
+</template>
