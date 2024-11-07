@@ -5,12 +5,12 @@
       </div>
   
       <div class="contacts">
-        <h3>Contact</h3>
+        <div class="contact-text">Contact</div>
         <ul>
           <li v-for="(contact, index) in contacts" :key="index" class="contact-item">
             <div v-if="contact.icon" class="material-icons">{{ contact.icon }}</div>
-            <img v-else-if="contact.image" :src="contact.image" height="20" width="20">
-            <div>{{ contact.text }}</div>
+            <img v-else-if="contact.image" :src="contact.image">
+            <a :href="contact.link?contact.link:undefined" target="_blank">{{ contact.text }}</a>
           </li>
         </ul> 
       </div>
@@ -25,11 +25,10 @@ const contacts:Ref<{ text:string,icon?:string,image?:string,link?:string}[]>=ref
     {icon:"call", text:"06 95 89 04 53"},
     {icon:"mail", text:"elora95.vigo@gmail.com"},
     {icon:"location_on", text:"31 300 Toulouse, France"},
-    {text:"LinkedIn",image:"./src/assets/Icons/Git.png",link:""},
-    {icon:"", text:"Elora-V",link:""}
+    {text:"LinkedIn",image:"./src/assets/Icons/LinkedIn.png",link:"https://www.linkedin.com/in/elora-vigo-47b598250/"},
+    {text:"Elora-V",image:"./src/assets/Icons/Git.png",link:"https://github.com/Elora-V"},
 ]);
 
-const logoGit=""
 
 </script>
 
@@ -37,33 +36,59 @@ const logoGit=""
 .container {
   display: flex;
   width: 100%;
-  overflow: hidden;
+  height: 100%;
+  /* overflow: hidden; */
 }
 
 .name, .contacts {
   width: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 10px;
+  padding: 5px;
 }
 
-.name h2 {
-  margin: 0;
-  text-align: center;
+.name{
+    justify-content: center;
+
+    h2 {
+    margin: 0;
+    text-align: center;
+    }
 }
+
 
 .contacts {
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: blueviolet;
-}
-
-.contact-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
-  margin: 2%;
+
+  .contact-text {
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    }
+
+
+    ul {
+    padding: 0;
+    margin: 2px;
+    }
+
+    img {
+    height: auto;
+    max-height: 23px; /* Maximum height for image */
+    width: auto;
+    }
+
+    a{
+        color: inherit;
+    }
+    .contact-item {
+    display: flex;
+    gap: 10px;
+    margin: 2px;
+    }
+
 }
 
 </style>

@@ -49,6 +49,7 @@ import Skills from '@/components/Skills.vue';
 }
 
 .horizontal-right {
+  display: flex;
   grid-row: 2 / 3;
   grid-column: 3 / 4;
   background-color: var(--horizontal-div-cv);
