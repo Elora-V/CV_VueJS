@@ -1,11 +1,15 @@
 <template>
-    je suis interesser par ...
+    <div class="container">
+        je suis interesser par ...<br>
 
-    skills :
-    .....
+        skills :
+        .....
+    </div>     
 </template>
 
 <style scoped>
 
-
+.container{
+    padding: 10% 3%;
+}
 </style>

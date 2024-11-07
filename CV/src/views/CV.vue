@@ -2,7 +2,9 @@
     <div class="containerA4Page">
         <A4Page>
             <div class="containerGrid">
-                <div class="vertical" ><Skills/></div>
+                <div class="vertical-top" ></div>
+                <div class="vertical-middle" ><Photo/></div>
+                <div class="vertical-bottom" ><Skills/></div>
                 <div class="horizontal-left"></div>
                 <div class="horizontal-right"><Contact/></div>
                 <div class="remaining-space"><Experiences/></div>
@@ -16,6 +18,7 @@
 import A4Page from '@/components/A4Page.vue';
 import Contact from '@/components/Contact.vue';
 import Experiences from '@/components/Experiences.vue';
+import Photo from '@/components/Photo.vue';
 import Skills from '@/components/Skills.vue';
 </script>
 
@@ -36,9 +39,21 @@ import Skills from '@/components/Skills.vue';
   gap: 0;
 }
 
-.vertical {
-  grid-row: 1/4; /* start from 1 (top) to 4 (bottom)*/
+.vertical-top {
+  grid-row: 1/2; /* start from 1 (top) to 2 (end of row 1/start row 2)*/
   grid-column: 2 / 3; /* strat from 2 (end of 1 column / beginning of 2 column) and end to 3 (end of 2 column/ start 3 column) */
+  background-color: var(--vertical-div-cv);
+}
+
+.vertical-middle {
+  grid-row: 2/3; /* start from 1 (top) to 4 (bottom)*/
+  grid-column: 2 / 3;
+  background-color: var(--vertical-div-cv);
+}
+
+.vertical-bottom {
+  grid-row: 3/4; 
+  grid-column: 2 / 3;
   background-color: var(--vertical-div-cv);
 }
 
