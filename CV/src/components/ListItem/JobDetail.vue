@@ -40,9 +40,8 @@
   .container {
     display: flex;
     flex-direction: column;
-    padding: 1% 2%;
-    margin: 2% 3%;
     align-items: flex-start;
+    padding: 0% 2%;
   }
   
   .title {
@@ -63,7 +62,7 @@
   }
   
   .tag {
-    background-color: #d1d0d0;
+    background-color: var(--light-grey-bg);
     border-radius: 12px;
     padding: 2px 8px;
     font-size: 0.8rem;

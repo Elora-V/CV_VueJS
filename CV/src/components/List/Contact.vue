@@ -18,10 +18,11 @@
   </template>
 
 <script setup lang="ts">
+import type { ContactDetails } from '@/models/ContactDetails';
 import { ref, type Ref } from 'vue';
 
 
-const contacts:Ref<{ text:string,icon?:string,image?:string,link?:string}[]>=ref([
+const contacts:Ref<ContactDetails[]>=ref([
     {icon:"call", text:"06 95 89 04 53"},
     {icon:"mail", text:"elora95.vigo@gmail.com"},
     {icon:"location_on", text:"31 300 Toulouse, France"},

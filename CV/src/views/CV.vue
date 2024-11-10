@@ -16,10 +16,10 @@
 
 <script setup lang="ts">
 import A4Page from '@/components/A4Page.vue';
-import Contact from '@/components/Contact.vue';
-import Experiences from '@/components/Experiences.vue';
+import Contact from '../components/List/Contact.vue';
+import Experiences from '@/components/List/Experiences.vue';
 import Photo from '@/components/Photo.vue';
-import Skills from '@/components/Skills.vue';
+import Skills from '@/components/List/Skills.vue';
 </script>
 
 <style scoped>
