@@ -1,5 +1,6 @@
 <template>
-    <div class="container">
+   <!-- if Experience-->
+    <div v-if="!smallJob" class="container">
       <div class="title">
         {{ jobDetails.title }}
         <span v-if="jobDetails.firm"> | {{ jobDetails.firm }}</span>
@@ -25,6 +26,17 @@
         {{ jobDetails.description }}
       </div>
     </div>
+
+    <!--if Small experience-->
+    <div v-else class="small-container">
+      <div class="small-title">
+        {{ jobDetails.title }}
+      </div>  
+      <div v-if="jobDetails.date" class="soft-text">
+          <span class="material-icons">calendar_month</span>
+          {{ jobDetails.date }}
+      </div>
+    </div>
   </template>
   
   <script setup lang="ts">
@@ -32,8 +44,10 @@
   import type { JobDetails } from "@/models/JobDetails"
   
   const props = defineProps<{
-    jobDetails: JobDetails
+    jobDetails: JobDetails,
+    smallJob : boolean
   }>()
+
   </script>
   
   <style scoped>
@@ -43,11 +57,24 @@
     align-items: flex-start;
     padding: 0% 2%;
   }
+
+  .small-container {
+    display: flex;
+    align-items: flex-start;
+    padding: 0% 2%;
+    gap: 10px;
+  }
   
   .title {
     font-size: 1rem;
     font-weight: 600;
     margin: 1% 0%;
+  }
+
+  .small-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 0% 0%;
   }
   
   .tags {
