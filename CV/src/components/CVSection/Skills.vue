@@ -3,6 +3,7 @@
 
         <!--Description-->
         <div class="description">
+            <div class="title-vertical-div">Profil</div>
             J’ai réalisé un Master spécialisé
             en bio-informatique, et j’ai un
             fort intérêt pour le développement web, 
@@ -14,10 +15,7 @@
         <div>
             <div class="title-vertical-div">Compétences Informatiques</div>
             <ul class="list point-list">
-                <li v-for="skill in skills">
-                    <span class="material-icons icon-align">chevron_right</span>
-                    <div v-html="skill"></div>
-                </li>
+                <SkillDetail v-for="skill in skills" :skill="skill"/>
             </ul>
         </div>
 
@@ -25,25 +23,25 @@
         <div>
             <div class="title-vertical-div">Autres compétences</div>
             <ul class="list point-list">
-                <li v-for="skill in otherSkills">
-                    <span class="material-icons icon-align">chevron_right</span>
-                    {{ skill }}
-                </li>
+                <SkillDetail v-for="skill in otherSkills" :skill="skill"/>
             </ul>
         </div>
 
         <!--Languages-->
         <div>
             <div class="title-vertical-div">Langues</div>
-
-            
+                <ul class="list point-list">
+                    <LanguageDetails v-for="language in languages" :language="language"/>
+                </ul>
         </div>
         
     </div>     
 </template>
 
 <script lang="ts" setup>
-import {skills, otherSkills} from "@/data/Skills"
+import {skills, otherSkills,languages} from "@/data/Skills"
+import SkillDetail from "../ListItem/SkillDetail.vue";
+import LanguageDetails from "../ListItem/LanguageDetails.vue";
 </script>
 
 <style scoped>
@@ -62,8 +60,8 @@ import {skills, otherSkills} from "@/data/Skills"
 
 .title-vertical-div {
     font-size: 1.2rem;
-    font-weight: 600;
-    padding-bottom: 4%;
+    font-weight: 700;
+    padding-bottom: 6%;
 }
 
 .text-vertical-div {
@@ -74,7 +72,7 @@ import {skills, otherSkills} from "@/data/Skills"
 .list {
     display: flex;
     flex-direction: column;
-    gap: 4px; /* Small gap to save space */
+    gap: 5px; /* Small gap to save space */
     list-style-type: none; /* Remove default bullet points */
     padding: 0;
     margin: 0 7%;
@@ -87,10 +85,5 @@ import {skills, otherSkills} from "@/data/Skills"
     gap: 6px; /* Space between icon and text */
 }
 
-.icon-align {
-    font-size: 1rem;
-    align-self: flex-start; /* Align icon at the top of the li element */
-    margin-top: 2px; /* Adjust for slight vertical alignment if needed */
-}
 
 </style>
