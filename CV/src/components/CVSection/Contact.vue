@@ -34,6 +34,7 @@ import {contacts} from "@/data/Contacts";
   display: flex;
   align-items: center;
   padding: 5px;
+  color: var(--text-horizontal-div);
 }
 
 .name{
@@ -76,6 +77,7 @@ import {contacts} from "@/data/Contacts";
     display: flex;
     gap: 10px;
     margin: 2px;
+    color: var(--text-horizontal-div);
     }
 
 }

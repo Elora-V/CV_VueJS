@@ -40,7 +40,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue'
 import type { JobDetails } from "@/models/JobDetails"
 
 const props = defineProps<{

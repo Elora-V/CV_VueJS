@@ -18,7 +18,7 @@
     width: 170px;            
     height: 170px;           
     border-radius: 50%; 
-    border: solid 2px white;
+    border: solid 2px var(--border-image-cv);
     overflow: hidden;  /* hide what is not inside border */
 }
 
