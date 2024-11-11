@@ -25,8 +25,14 @@
         <br>
 
         <div class="title"> Formations </div>
+        <!--Formations-->
         <div class="flex-col">
-
+            <JobDetail v-for="(formation, index) in formationsToDisplay" :key="index"
+            :job-details="formation"
+            :small-job="false"
+            >
+            <div v-html="formation.description"></div>
+            </JobDetail>
         </div>
 
     </div>
@@ -37,9 +43,11 @@
 import JobDetail from "../ListItem/JobDetail.vue"
 import {experiences} from "@/data/Jobs"
 import {smallExperiences} from "@/data/Jobs"
+import {formations} from "@/data/Formations"
 
 const experiencesToDisplay=experiences.filter(job=> job.display);
 const smallExperiencesToDisplay=smallExperiences.filter(job=> job.display);
+const formationsToDisplay=formations.filter(formation=> formation.display);
 
 </script>
 

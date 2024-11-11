@@ -61,12 +61,12 @@ export const smallExperiences:JobDetails[]=[
     {
         title:"Caissière en supermarché",
         date:"aout 2021, aout 2023",
-        display:false
+        display:true
     },
     {
         title:"Vacataire surveillance concours ENS",
         date:"juin 2022",
-        display:false
+        display:true
     },
     {
         title:"Stage en bibliothèque",
