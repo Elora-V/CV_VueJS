@@ -4,8 +4,7 @@
         <!--Description-->
         <div class="description">
             <div class="title-vertical-div">Profil</div>
-            J’ai réalisé un Master spécialisé
-            en bio-informatique, et j’ai un
+            Je suis ingénieur d'études en bio-informatique, et j’ai un
             fort intérêt pour le développement web, 
             les bases de données et l’algorithmique.
         </div>
