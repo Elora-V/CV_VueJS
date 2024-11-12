@@ -9,8 +9,9 @@ export const experiences:JobDetails[]=[
         location:"Toulouse, saint-martin-du-touch",
         date:"septembre-decembre 2024",
         skills:["Typescript","Jest","Vue.js","Vuetify"],
-        description:"Rendre disponible un algorithme : tests unitaires,\
-        documentation, packaging et panel utilisateur."
+        description:"Rendre disponible un algorithme de dessin de graphe en typescript: nettoyage de code, tests unitaires,\
+        documentation, packaging. L'intégrer à un outil de visualisation créé par l'équipe \
+        en réalisant un panel utilisateur avec Vue.js."
     },
     {
         title:"Stage : Developpement d'un algorithme",
@@ -20,8 +21,9 @@ export const experiences:JobDetails[]=[
         location:"Toulouse, saint-martin-du-touch",
         date:"mars-aout 2024",
         skills:["Typescript","Théorie des graphes","Bibliographie"],
-        description:"Developpement d'un algorithme de dessin de graphe \
-        adapté aux réseaux métaboliques."
+        description:"Développement en TypeScript d'un algorithme de dessin de graphes, adapté aux réseaux métaboliques.\
+        Cet algorithme prend en entrée un graphe représentant le réseau métabolique et modifie les positions des nœuds.\
+        Il s'appuie sur la bibliothèque GraphViz et utilise des concepts de théorie des graphes."
     },
     {
         title:"Stage : Modification d'interface web",
@@ -31,8 +33,9 @@ export const experiences:JobDetails[]=[
         location:"Jouy-en-Josas",
         date:"mai-juin 2023",
         skills:["HTML","CSS","Javascript","Python","Flask","SQL"],
-        description:"Intégration d'une information de fiabilité dans la base \
-        de données et dans l'interface web d'Omnicrobe."
+        description:"Ajout d'une information de fiabilité des résultats dans la base \
+        de données sur les micro-organismes de l'équipe, et intégration de l'information \
+        dans l'interface web d'Omnicrobe réalisé avec le framework Flask."
     },
     {
         title:"TER : Etude reproductibilité des workflows",
@@ -41,9 +44,9 @@ export const experiences:JobDetails[]=[
         location:"Orsay",
         date:"octobre-decembre 2022",
         skills:["git","Python","Docker"],
-        description:"Travaux d'Etude et de Recherche sur l'évaluation de \
-        la reproductibilité des workflows Nextflow présent sur github.",
-    },
+        description : "Études et recherches sur la reproductibilité des workflows, \
+        avec une évaluation comparative des graphes de workflows Nextflow disponibles sur GitHub \
+        afin d'analyser la réutilisation de leurs étapes."},
     {
         title:"Stage : Etude comportementale chez les rats",
         display:true,
@@ -53,7 +56,8 @@ export const experiences:JobDetails[]=[
         date:"mai-juin 2021",
         skills:["R","Bibliographie"],
         description:"Etude comportementale de l'estimation du temps \
-        chez les rats.",
+        chez les rats : application de protocoles d'apprentissage \
+        et analyse des résultats pour déterminer le passage au protocole suivant.",
     },
 ]
 

@@ -32,7 +32,7 @@ import Skills from '@/components/CVSection/Skills.vue';
 
 .containerGrid {
   display: grid;
-  grid-template-rows: 2% 15% auto; /*one row of x%, then x% then the remaining space (auto) */
+  grid-template-rows: 1% 15% auto; /*one row of x%, then x% then the remaining space (auto) */
   grid-template-columns: 3% 28% auto; /*one column of x% , then x% then remaining space (auto)*/
   height: 100%;
   width: 100%;

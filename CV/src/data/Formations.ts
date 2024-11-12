@@ -15,6 +15,30 @@ export const formations:JobDetails[]=[
         firm:"Université Paris-Saclay",
         location:"Orsay",
         date:"2022-2024",
+        skills:["Base de données (SQL)","Python","R","Java","bash","C","Django","Git",
+            "Statistiques","Informatique théorique", "Biologie structurale","Analyse -omiques"
+        ]
+    },
+    {
+        title:"Double licence Biologie-Mathématiques",
+        display:true,
+        firm:"Université Paris-Saclay",
+        location:"Orsay",
+        date:"2019-2022",
+        skills:["R","C++","Statistiques","Algèbre linéaire","Calcul différentiel et intégral",
+        "Biologie cellulaire","Biologie moléculaire",
+        "Génétique des populations","Génétique",
+    ]
+    },
+]
+
+/**
+ * {
+        title:"Master Bio-informatique",
+        display:true,
+        firm:"Université Paris-Saclay",
+        location:"Orsay",
+        date:"2022-2024",
         skills:["Base de données","Python","R","Java","bash","C","Django","Git","Nextflow",
             "Statistiques","Informatique théorique", "Biologie structurale","NGS","Analyse -omiques"
         ]
@@ -31,4 +55,4 @@ export const formations:JobDetails[]=[
         "Ecologie","Evolution"
     ]
     },
-]
+ */

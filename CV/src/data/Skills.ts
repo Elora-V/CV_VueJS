@@ -5,21 +5,16 @@ export const skills:SkillDetails[]=[
     {skill:"Javascript/Typescript"},
     {skill:"HTML"},
     {skill:"CSS"},
-    {title:"Framework web :",skill:"Vue.js, Django"},
-    {skill:"SQL"},
+    {skill:"Vue.js, Vuetify"},
+    {skill:"Jest"},
     {skill:"Python"},
-    {skill:"Java"},
-    {skill:"R"},
-    {skill:"Bash"}
+    {skill:"SQL"},
 ];
 
 export const otherSkills:SkillDetails[]=[
      {skill:"Git"},
-     {title:"Statistiques :",
-        skill:"Méthode de vraisemblance,\
-        Régression, Classification"},
      {title:"Informatique théorique :",
-        skill:"Graphes, Languages"},
+        skill:"Graphes"},
      {skill:"LateX"}
 ];
 
