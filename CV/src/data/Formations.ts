@@ -6,7 +6,7 @@ export const formations:JobDetails[]=[
         display:true,
         firm:"DAWAN",
         location:"Toulouse",
-        date:"octobre 2024",
+        date:"21-25 octobre 2024",
         skills:["Base Vue.js","Animations","Vue Router","Vuex","Axios"],
     },
     {

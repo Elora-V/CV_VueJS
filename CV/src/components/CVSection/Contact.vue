@@ -58,6 +58,8 @@ import { contacts } from "@/data/Contacts";
 
 .name {
   justify-content: center;
+  flex-direction: column;
+  gap:10px;
 
   h2 {
     margin: 0;

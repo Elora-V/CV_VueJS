@@ -4,7 +4,7 @@ export const experiences:JobDetails[]=[
     {
         title:"Ingenieur d'étude",
         display:true,
-        firm:"INRAE",
+        firm:"INRAE ToxAlim",
         team:"MeX",
         location:"Toulouse, saint-martin-du-touch",
         date:"septembre-decembre 2024",
@@ -15,7 +15,7 @@ export const experiences:JobDetails[]=[
     {
         title:"Stage : Developpement d'un algorithme",
         display:true,
-        firm:"INRAE",
+        firm:"INRAE ToxAlim",
         team:"MeX",
         location:"Toulouse, saint-martin-du-touch",
         date:"mars-aout 2024",
@@ -61,12 +61,12 @@ export const smallExperiences:JobDetails[]=[
     {
         title:"Caissière en supermarché",
         date:"aout 2021, aout 2023",
-        display:true
+        display:false
     },
     {
         title:"Vacataire surveillance concours ENS",
         date:"juin 2022",
-        display:true
+        display:false
     },
     {
         title:"Stage en bibliothèque",
