@@ -2,16 +2,13 @@ import type { JobDetails } from "@/models/JobDetails";
 
 export const experiences:JobDetails[]=[
     {
-        title:"Ingenieur d'étude",
+        title:"Ingenieur d'étude en bio-informatique",
         display:true,
         firm:"INRAE ToxAlim",
         team:"MeX",
         location:"Toulouse, saint-martin-du-touch",
         date:"septembre-decembre 2024",
-        skills:["Typescript","Jest","Vue.js","Vuetify"],
-        description:"Rendre disponible un algorithme de dessin de graphe en typescript: nettoyage de code, tests unitaires,\
-        documentation, packaging. L'intégrer à un outil de visualisation créé par l'équipe \
-        en réalisant un panel utilisateur avec Vue.js."
+        skills:[],
     },
     {
         title:"Stage : Developpement d'un algorithme",
@@ -20,10 +17,16 @@ export const experiences:JobDetails[]=[
         team:"MeX",
         location:"Toulouse, saint-martin-du-touch",
         date:"mars-aout 2024",
-        skills:["Typescript","Théorie des graphes","Bibliographie"],
-        description:"Développement en TypeScript d'un algorithme de dessin de graphes, adapté aux réseaux métaboliques.\
-        Cet algorithme prend en entrée un graphe représentant le réseau métabolique et modifie les positions des nœuds.\
-        Il s'appuie sur la bibliothèque GraphViz et utilise des concepts de théorie des graphes."
+        skills:[],
+    },
+    {
+        title:"Caissière",
+        firm:"Intermaché",
+        display:true,
+        location:"Gif-sur-Yvette",
+        date:"aout 2023",
+        skills:["Relation/service client","Maîtrise des outils de caisse","Rigueur et respect des consignes","Gestion de situations imprévues"],
+        description:"Gestion d'une caisse avec espèces, facing (réorganisation des produits pour les rendre plus visibles) des rayons occasionnel.",
     },
     {
         title:"Stage : Modification d'interface web",
@@ -32,10 +35,7 @@ export const experiences:JobDetails[]=[
         team:"MaIAGE",
         location:"Jouy-en-Josas",
         date:"mai-juin 2023",
-        skills:["HTML","CSS","Javascript","Python","Flask","SQL"],
-        description:"Ajout d'une information de fiabilité des résultats dans la base \
-        de données sur les micro-organismes de l'équipe, et intégration de l'information \
-        dans l'interface web d'Omnicrobe réalisé avec le framework Flask."
+        skills:[],
     },
     {
         title:"TER : Etude reproductibilité des workflows",
@@ -43,10 +43,26 @@ export const experiences:JobDetails[]=[
         firm:"LISN",
         location:"Orsay",
         date:"octobre-decembre 2022",
-        skills:["git","Python","Docker"],
-        description : "Études et recherches sur la reproductibilité des workflows, \
-        avec une évaluation comparative des graphes de workflows Nextflow disponibles sur GitHub \
-        afin d'analyser la réutilisation de leurs étapes."},
+        skills:[],
+    },
+    {
+        title:"Vacataire surveillance concours oraux",
+        firm:"ENS",
+        display:true,
+        location:"Gif-sur-Yvette",
+        date:"juin 2022",
+        skills:["Organisation logistique","Gestion du temps","Rigueur et respect des consignes","Travail en équipe"],
+        description:"Gestion des émargements, de la gestion et surveillence de la salle d'examen, et orientation des candidats dans les locaux.",
+    },
+    {
+        title:"Caissière",
+        firm:"Intermaché",
+        display:true,
+        location:"Gif-sur-Yvette",
+        date:"aout 2021",
+        skills:["Relation/service client", "Maîtrise des outils de caisse","Rigueur et respect des consignes"],
+        description:"Gestion d'une caisse sans espèces.",
+    },
     {
         title:"Stage : Etude comportementale chez les rats",
         display:true,
@@ -54,27 +70,17 @@ export const experiences:JobDetails[]=[
         team: "Mémoire, émotion, et temps",
         location:"Orsay",
         date:"mai-juin 2021",
-        skills:["R","Bibliographie"],
-        description:"Etude comportementale de l'estimation du temps \
-        chez les rats : application de protocoles d'apprentissage \
-        et analyse des résultats pour déterminer le passage au protocole suivant.",
+        skills:[],
+    },
+    {
+        title:"Stage en Bibliothèque",
+        display:true,
+        location:"Chevreuse",
+        date:"2 semaines en juin 2017",
+        skills:["Organisation logistique","Sens du service et relation usager"],
+        description:"Rangement, trie, préparation et prêt de livre.",
     },
 ]
 
-export const smallExperiences:JobDetails[]=[
-    {
-        title:"Caissière en supermarché",
-        date:"aout 2021, aout 2023",
-        display:false
-    },
-    {
-        title:"Vacataire surveillance concours ENS",
-        date:"juin 2022",
-        display:false
-    },
-    {
-        title:"Stage en bibliothèque",
-        date:"juin 2017",
-        display:false,
-    }
-]
+
+export const smallExperiences:JobDetails[]=[];

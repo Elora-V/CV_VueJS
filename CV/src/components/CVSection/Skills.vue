@@ -12,19 +12,19 @@
         
         <!-- Skills -->
         <div>
-            <div class="title-vertical-div">Compétences Informatiques</div>
+            <div class="title-vertical-div">Compétences</div>
             <ul class="list point-list">
                 <SkillDetail v-for="skill in skills" :skill="skill"/>
             </ul>
         </div>
 
         <!-- Other Skills -->
-        <div>
+        <!-- <div>
             <div class="title-vertical-div">Autres compétences</div>
             <ul class="list point-list">
                 <SkillDetail v-for="skill in otherSkills" :skill="skill"/>
             </ul>
-        </div>
+        </div> -->
 
         <!--Languages-->
         <div>

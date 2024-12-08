@@ -2,12 +2,12 @@ import type { JobDetails } from "@/models/JobDetails";
 
 export const formations:JobDetails[]=[
     {
-        title:"Formation Vue.js",
+        title:"Formation Développement FrontEnd Vue.js",
         display:true,
         firm:"DAWAN",
         location:"Toulouse",
         date:"21-25 octobre 2024",
-        skills:["Base Vue.js","Animations","Vue Router","Vuex","Axios"],
+        skills:[],
     },
     {
         title:"Master Bio-informatique",
@@ -15,9 +15,7 @@ export const formations:JobDetails[]=[
         firm:"Université Paris-Saclay",
         location:"Orsay",
         date:"2022-2024",
-        skills:["Base de données (SQL)","Python","R","Java","bash","C","Django","Git",
-            "Statistiques","Informatique théorique", "Biologie structurale","Analyse -omiques"
-        ]
+        skills:[]
     },
     {
         title:"Double licence Biologie-Mathématiques",
@@ -25,10 +23,7 @@ export const formations:JobDetails[]=[
         firm:"Université Paris-Saclay",
         location:"Orsay",
         date:"2019-2022",
-        skills:["R","C++","Statistiques","Algèbre linéaire","Calcul différentiel et intégral",
-        "Biologie cellulaire","Biologie moléculaire",
-        "Génétique des populations","Génétique",
-    ]
+        skills:[]
     },
 ]
 
