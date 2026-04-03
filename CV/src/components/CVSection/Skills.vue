@@ -4,15 +4,14 @@
         <!--Description-->
         <div class="description">
             <div class="title-vertical-div">Profil</div>
-            Je suis ingénieur d'études en bio-informatique, et j’ai un
-            fort intérêt pour le développement web, 
-            les bases de données et l’algorithmique.
+            Ingénieure full stack issue d’un parcours en bioinformatique, 
+            je conçois des applications métiers intuitives pour faciliter l’exploitation de données complexes.
         </div>
 
         
         <!-- Skills -->
         <div>
-            <div class="title-vertical-div">Compétences</div>
+            <div class="title-vertical-div">Qualités professionnelles</div>
             <ul class="list point-list">
                 <SkillDetail v-for="skill in skills" :skill="skill"/>
             </ul>

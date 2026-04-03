@@ -2,7 +2,7 @@
   <div class="container">
     <div class="name">
       <h2>Elora Vigo</h2>
-      <div class="job">Ingénieur d'études en bio-informatique</div>
+      <div class="job">Développeur full stack</div>
     </div>
 
     <div class="contacts">

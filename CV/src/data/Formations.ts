@@ -2,6 +2,14 @@ import type { JobDetails } from "@/models/JobDetails";
 
 export const formations:JobDetails[]=[
     {
+        title:"Formation Git",
+        display:true,
+        firm:"Université Paris-Saclay",
+        location:"Orsay",
+        date:"19-21 novembre 2025",
+        skills:[],
+    },
+    {
         title:"Formation Développement FrontEnd Vue.js",
         display:true,
         firm:"DAWAN",

@@ -2,7 +2,17 @@ import type { LanguageDetails } from "@/models/LanguageDetails";
 import type { SkillDetails } from "@/models/SkillDetails";
 
 export const skills:SkillDetails[]=[
-    {skill:""},
+    //{skill:"Sérieux"},
+    {skill:"Rigueur"},
+    {skill:"Sens du détail"},
+    {skill:"Esprit d'analyse"},
+    //{skill:"Ponctualité"},
+    //{skill:"Organisation"},
+    {skill:"Travail en équipe"},
+    {skill:"Adaptabilité"},
+    {skill:"Curiosité technique"},
+    //{skill:"Autonomie"},
+
 ];
 
 export const otherSkills:SkillDetails[]=[];
