@@ -10,7 +10,7 @@
 
         
         <!-- Professional Skills -->
-        <div>
+        <div v-if="pro_skills && pro_skills.length > 0">
             <div class="title-vertical-div">Qualités professionnelles</div>
             <ul class="list point-list">
                 <SkillDetail v-for="skill in pro_skills" :skill="skill"/>
@@ -18,7 +18,7 @@
         </div>
 
         <!-- Technical Skills -->
-        <div>
+        <div v-if="technical_skills && technical_skills.length > 0">
             <div class="title-vertical-div">Compétences techniques</div>
             <ul class="list point-list">
                 <SkillDetail v-for="skill in technical_skills" :skill="skill"/>

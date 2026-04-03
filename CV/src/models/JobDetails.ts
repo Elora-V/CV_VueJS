@@ -5,7 +5,8 @@ export interface JobDetails {
     team?: string;           
     location?: string;       
     date: string;           
-    skills?: string[];       
+    pro_skills?: string[];    
+    tech_skills?: string[];   
     description?: string;
   }
   

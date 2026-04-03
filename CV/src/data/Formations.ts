@@ -7,7 +7,6 @@ export const formations:JobDetails[]=[
         firm:"Université Paris-Saclay",
         location:"Orsay",
         date:"19-21 novembre 2025",
-        skills:[],
     },
     {
         title:"Formation Développement FrontEnd Vue.js",
@@ -15,7 +14,7 @@ export const formations:JobDetails[]=[
         firm:"DAWAN",
         location:"Toulouse",
         date:"21-25 octobre 2024",
-        skills:[],
+        tech_skills:["Base Vue.js","Animations","Vue Router","Vuex","Axios"],
     },
     {
         title:"Master Bio-informatique",
@@ -23,7 +22,9 @@ export const formations:JobDetails[]=[
         firm:"Université Paris-Saclay",
         location:"Orsay",
         date:"2022-2024",
-        skills:[]
+        tech_skills:["Base de données (SQL)","Python","R","Java","bash","C","Django","Git",
+            "Statistiques","Informatique théorique", "Biologie structurale","Analyse -omiques"
+        ]
     },
     {
         title:"Double licence Biologie-Mathématiques",
@@ -31,7 +32,10 @@ export const formations:JobDetails[]=[
         firm:"Université Paris-Saclay",
         location:"Orsay",
         date:"2019-2022",
-        skills:[]
+        tech_skills:["R","C++","Statistiques","Algèbre linéaire","Calcul différentiel et intégral",
+            "Biologie cellulaire","Biologie moléculaire",
+            "Génétique des populations","Génétique",
+        ]
     },
 ]
 
