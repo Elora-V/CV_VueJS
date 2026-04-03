@@ -9,21 +9,29 @@
         </div>
 
         
-        <!-- Skills -->
+        <!-- Professional Skills -->
         <div>
             <div class="title-vertical-div">Qualités professionnelles</div>
             <ul class="list point-list">
-                <SkillDetail v-for="skill in skills" :skill="skill"/>
+                <SkillDetail v-for="skill in pro_skills" :skill="skill"/>
+            </ul>
+        </div>
+
+        <!-- Technical Skills -->
+        <div>
+            <div class="title-vertical-div">Compétences techniques</div>
+            <ul class="list point-list">
+                <SkillDetail v-for="skill in technical_skills" :skill="skill"/>
             </ul>
         </div>
 
         <!-- Other Skills -->
-        <!-- <div>
+        <div v-if="otherSkills && otherSkills.length > 0">
             <div class="title-vertical-div">Autres compétences</div>
             <ul class="list point-list">
                 <SkillDetail v-for="skill in otherSkills" :skill="skill"/>
             </ul>
-        </div> -->
+        </div>
 
         <!--Languages-->
         <div>
@@ -37,7 +45,7 @@
 </template>
 
 <script lang="ts" setup>
-import {skills, otherSkills,languages} from "@/data/Skills"
+import {pro_skills,technical_skills ,otherSkills,languages} from "@/data/Skills"
 import SkillDetail from "../ListItem/SkillDetail.vue";
 import LanguageDetails from "../ListItem/LanguageDetails.vue";
 </script>
