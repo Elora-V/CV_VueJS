@@ -9,4 +9,13 @@ export interface JobDetails {
     tech_skills?: string[];   
     description?: string;
   }
+
+export const SKILL_MODE: "pro" | "tech" | "all" | null = "pro"
+
+export function getAllSkills(job: JobDetails): string[] {
+  return [
+    ...(SKILL_MODE !== "tech" ? (job.pro_skills ?? []) : []),
+    ...(SKILL_MODE !== "pro" ? (job.tech_skills ?? []) : [])
+  ];
+}
   

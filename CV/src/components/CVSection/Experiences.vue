@@ -7,6 +7,7 @@
             <JobDetail v-for="(experience, index) in experiencesToDisplay" :key="index"
             :job-details="experience"
             :small-job="false"
+            :display-skill="true"
             >
             <div v-html="experience.description"></div>
             </JobDetail>
@@ -19,6 +20,7 @@
         <JobDetail v-for="(experience, index) in smallExperiencesToDisplay" :key="index"
             :job-details="experience"
             :small-job="true"
+            :display-skill="false"
             />
         </div>
 
@@ -30,6 +32,7 @@
             <JobDetail v-for="(formation, index) in formationsToDisplay" :key="index"
             :job-details="formation"
             :small-job="false"
+            :display-skill="false"
             >
             <div v-html="formation.description"></div>
             </JobDetail>

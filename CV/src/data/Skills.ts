@@ -19,7 +19,7 @@ export const technical_skills:SkillDetails[]=[
     {title:"Developpement web",skill:"HTML, CSS, Javascript/Typescript"},
     {title:"Front",skill:"Vue.js, Vuetify, Nuxt, Nuxt UI"},
     {title:"Back", skill:"Python, Django, FastAPI"},
-    {title:"Base de données",skill:"SQL"},
+    // {title:"Base de données",skill:"SQL"},
     {skill:"Git, Gitlab"}
     //{title:"Test",skill:"Jest"},
 ];

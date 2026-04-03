@@ -18,9 +18,11 @@
       </div>
     </div>
 
-    <div v-if="jobDetails.skills" class="tags">
-      <div v-for="skill in jobDetails.skills" :key="skill" class="tag skill">{{ skill }}</div>
-    </div>
+    <template v-if="props.displaySkill">
+      <div class="tags">
+        <div v-for="skill in getAllSkills(jobDetails)" :key="skill" class="tag skill">{{ skill }}</div>
+      </div>
+    </template>
 
     <div class="description">
       {{ jobDetails.description }}
@@ -41,10 +43,12 @@
 
 <script setup lang="ts">
 import type { JobDetails } from "@/models/JobDetails"
+import { getAllSkills } from "@/models/JobDetails"
 
 const props = defineProps<{
   jobDetails: JobDetails,
-  smallJob : boolean
+  smallJob : boolean,
+  displaySkill:boolean
 }>()
 
 </script>
